@@ -30,10 +30,6 @@ RUN /work/command/fetch
 COPY command/extract command/extract
 RUN /work/command/extract
 
-COPY patch patch
-COPY command/patch command/patch
-RUN /work/command/patch
-
 COPY command/configure command/configure
 RUN /work/command/configure
 
@@ -43,5 +39,3 @@ RUN /work/command/make
 COPY command/install command/install
 RUN /work/command/install
 
-COPY command/package command/package
-RUN /work/command/package
