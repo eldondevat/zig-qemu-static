@@ -1,4 +1,4 @@
-FROM alpine:3.18.3
+FROM alpine:3.22.1
 
 RUN apk update
 RUN apk upgrade
@@ -8,7 +8,8 @@ RUN apk add\
  make\
  samurai\
  perl\
- python3\
+ pcre2-dev python3\
+ pcre2-static\
  gcc\
  libc-dev\
  pkgconf\

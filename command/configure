@@ -10,7 +10,7 @@ RUN "/work/src/${QEMU_SRC_BASENAME}/configure" \
     --disable-debug-info \
     --disable-werror \
 -disable-libssh2 --disable-glusterfs \
-        --disable-seccomp --disable-{bzip2,snappy,lzo} --disable-usb-redir \
+--disable-gio        --disable-seccomp --disable-{bzip2,snappy,lzo} --disable-usb-redir \
         --disable-libusb  --disable-libnfs  \
         --disable-libiscsi --disable-rbd  --disable-spice --disable-attr \
         --disable-cap-ng --disable-linux-aio --disable-brlapi \
